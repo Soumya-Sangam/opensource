@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        char vig=sc.next().charAt(0);
+        char cha=sc.next().charAt(0);
+        if(vig== 'R' && cha=='P')
+            System.out.println("Charan");
+        else if(vig=='P' && cha=='R')
+            System.out.println("Vignesh");
+        else if(vig== 'P' && cha=='S')
+            System.out.println("Charan");
+        else if(vig=='S' && cha=='P')
+            System.out.println("Vignesh");
+        else if(vig== 'S' && cha=='R')
+            System.out.println("Charan");
+        else if(vig=='R' && cha=='S')
+            System.out.println("Vignesh");
+        else
+            System.out.println("NULL");
+    }
+}
